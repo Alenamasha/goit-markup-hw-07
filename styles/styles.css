@@ -165,10 +165,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms var(--timing-function);
-  /* transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-
 }
 
 .header-nav .header-nav__link:hover,
@@ -859,8 +855,13 @@ color: rgba(255, 255, 255, 0.6);
   transform: translateY(0);
 }
 
+.works__link:hover .works__overlay {
+  transform: translateY(0);
+}
+
 
 .works__link {
+  display: block;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -870,14 +871,6 @@ color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.works__link:hover .works__overlayy {
-  transform: translateY(0);
-  opacity: 1;
-}
-.works__link:focus .works__overlay {
-  transform: translateY(0);
-  opacity: 1;
-} 
 .works__blok {
   position: relative;
   overflow: hidden;
@@ -978,7 +971,7 @@ color: rgba(255, 255, 255, 0.6);
 .modal-close:hover,
 .modal-close:focus {
   fill: var(--color-logo-blue);
-  border-color: var(--color-logo-blue);
+  /* border-color: var(--color-logo-blue); */
 }
 
 .backdrop.is-hidden {
@@ -1022,11 +1015,15 @@ color: rgba(255, 255, 255, 0.6);
 .modal-box__label.check {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   font-size: 14px;
   letter-spacing: 0.03em;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+.modal-box__check {
+  margin-right: 8px;
 }
 
 textarea {
@@ -1070,6 +1067,7 @@ textarea {
   height: 120px;
   resize: none;
   padding: 12px 16px;
+  color: black;
 }
 
 
