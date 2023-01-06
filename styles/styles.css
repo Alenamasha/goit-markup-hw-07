@@ -1022,9 +1022,9 @@ color: rgba(255, 255, 255, 0.6);
   margin-bottom: 30px;
 }
 
-.modal-box__check {
+/* .modal-box__check {
   margin-right: 8px;
-}
+} */
 
 textarea {
   resize: none;
@@ -1116,4 +1116,67 @@ color: rgba(117, 117, 117, 0.5);
 .modal-box__btn:focus {
   background: #188ce8;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+/* скрываем дефолтный флажок */
+.check .modal-box__check {
+  position: absolute;
+  opacity: 0;
+}
+/* Создаем кастомный checkbox */
+.highload2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 15px;
+  border: 2px solid var(--color-black);
+  border-radius: 2px;
+
+}
+/* При наведении указателя мыши перекрашиваем */
+.check:hover .modal-box__check ~ .highload2 {
+  background-color: var(--color-white);
+  
+}
+/* Когда отмечен, то красим в зеленый цвет */
+.check .modal-box__check:checked ~ .highload2 {
+  background-color: var(--color-logo-blue);
+  border: inherit;
+}
+/* Создаем когда отмечено (не видно, когда не отмечено) */
+.highload2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Показываем когда отмечен */
+.check .modal-box__check:checked ~ .highload2:after {
+  display: block;
+}
+/* Стили индикатора */
+.check .highload2:after {
+  left: 8px;
+  top: 4px;
+  width: 8px;
+  height: 12px;
+  border: solid var(--color-white);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
