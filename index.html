@@ -193,8 +193,8 @@
 
       <!-- OUR TEAM -->
       <section class="main-team">
-        <div class="containerr">
-          <h2 class="main-team__title">Наша команда</h2>
+        <div class="container">
+          <h2 class="main-team__title main__title">Наша команда</h2>
           <ul class="main-team__list card-set">
             <li class="main-team__item card-set-item">
               <img
@@ -639,13 +639,19 @@
           ></textarea>
            </div>
 
-          <label class="modal-box__label check">
-            <input class="modal-box__checkin" type="checkbox" name="mailing" 
-                value="agree_with_the_mailing"">
+           <label for="check" class="modal-box__label check">
+            <input
+            class="modal-box__check" 
+              required 
+              type="checkbox" 
+              name="mailing" 
+              id="check"
+              placeholder=" "
+              />
+            <span class="modal-box__mark"></span>
             Погоджуюся з розсилкою та приймаю
             <a href="#" class="modal-box__link">Умови договору</a>
           </label>
-
 
             <button type="submit" class="modal-box__btn button">Відправити</button>
           </form>

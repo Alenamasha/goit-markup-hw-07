@@ -9,9 +9,13 @@
     padding-bottom: 94px;
   }
   
+  .main-team__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   
   .main-team__list {
-    --items: 4;
+    $items: 4;
   }
   
   .main-team__item {
@@ -19,6 +23,7 @@
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
     background-color: $color-backgraund-section;
+    flex-basis: calc((100% - $indent * (4 - 1)) / 4);
   }
   
   .main-team__title {

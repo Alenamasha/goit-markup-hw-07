@@ -27,8 +27,8 @@
   
   .main-hero__btn {
     font-family: inherit;
-    color: var(--color-white);
-    background-color: var(--color-logo-blue);
+    color: $color-white;
+    background-color: $color-logo-blue;
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;

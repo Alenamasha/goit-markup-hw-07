@@ -1,16 +1,18 @@
 
 //utils
 @import './utils/vars';
+@import "./utils/placeholder";
+@import "./utils/mixins";
 
 //base
 @import "./base/common";
 @import "./base/reset";
 
 //components
+@import "./components/grid";
 
 @import "./components/container";
 @import "./components/textstyles";
-@import "./components/grid";
 
 
 @import "./components/button";
@@ -23,9 +25,9 @@
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/info";
-@import "./layout/klients";
-@import "./layout/mainbusy";
 
+@import "./layout/mainbusy";
+@import "./layout/klients";
 @import "./layout/footer";
 @import "./layout/ourteam";
 @import "./layout/cards";

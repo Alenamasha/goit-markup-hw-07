@@ -39,7 +39,7 @@
   .modal-close:hover,
   .modal-close:focus {
     fill: $color-logo-blue;
-    border-color: $color-logo-blue;
+    // border-color: $color-logo-blue;
   }
   
   .backdrop.is-hidden {
@@ -83,7 +83,7 @@
   .modal-box__label.check {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     font-size: 14px;
     letter-spacing: 0.03em;
     margin-top: 20px;
