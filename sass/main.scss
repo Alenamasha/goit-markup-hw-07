@@ -1,19 +1,28 @@
-@import "./base/reset";
+//utils
 @import './utils/vars';
 
+//base
+@import "./base/reset";
 @import "./base/common";
 
+//components
 @import "./components/button";
 @import "./components/container";
 @import "./components/grid";
 @import "./components/textstyle";
+@import "./components/logo";
+@import "./components/modal";
 
+//layout
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/info";
 @import "./layout/mainbusy";
 @import "./layout/klients";
 @import "./layout/footer";
+@import "./layout/ourteam";
+@import "./layout/cards";
+@import "./layout/filtrbtn";
 
 
 
