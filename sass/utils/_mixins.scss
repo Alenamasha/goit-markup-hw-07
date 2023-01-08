@@ -1,8 +1,18 @@
-@mixin section-title() {
+@mixin section-title($color-contakt: $color-black) {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     margin-bottom: 50px;
-    color: var($color-black);
+    color: $color-contakt;
+}
+
+@mixin grid($gap-grid: $indent) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent;
+}
+
+@mixin grid-item($gap-grid: $indent, $gap-item: $items) {
+    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
 }

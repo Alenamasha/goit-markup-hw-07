@@ -2,14 +2,17 @@
 .footer {
     display: flex;
     padding: 60px 0;
-  }
-  
-  .footer .container {
+    
+    & .container {
     display: flex;
     gap: 70px;
     align-items: baseline;
   }
-  
+
+  & .footer-contakt__list {
+    color: $color-white;
+  }
+}
   .footer-contakt__list {
     padding: 0;
     padding-top: 20px;
@@ -20,19 +23,19 @@
     font-size: 14px;
     line-height: 1.71;
     margin-bottom: 9px;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   
-  .footer-contakt__item:last-child {
-    margin-bottom: 0;
-  }
+ 
   
   .logo>.logo__clr {
     color: $color-white;
   }
   
-  .footer .footer-contakt__list {
-    color: $color-white;
-  }
+
   
   .footer-contakt__link {
     color: $color-white;
@@ -42,18 +45,18 @@
     letter-spacing: 0.03em;
   }
   
-  .contheader-contacts__list {
+  .header-contacts__list {
     color: #FFFFFF90;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
+    &:hover,
+    &:focus {
+      color: $color-logo-blue;
+    }
   }
-  
-  .header-contacts__list:hover,
-  .header-contacts__list:focus {
-    color: $color-logo-blue;
-  }
+ 
   
   .contacts {
     font-weight: 400;
@@ -102,12 +105,13 @@
     border-radius: 50%;
     transition: background-color 250ms $timing-function, color 250ms $timing-function, fill 250ms $timing-function;
   
+    &:hover,
+    &:focus {
+      background-color: $color-logo-blue;
+    }
   }
   
-  .footer-social__link:hover,
-  .footer-social__link:focus {
-    background-color: $color-logo-blue;
-  }
+  
   
   .footer-social__icon {
     fill: $color-white;
@@ -149,11 +153,13 @@
     background-color: transparent;
     color: $color-white;
     outline: none;
+
+      &:hover {
+      border: 1px solid $color-logo-blue;
+    }
   }
   
-  .footer-feedback__input:hover {
-    border: 1px solid $color-logo-blue;
-  }
+  
   
   .footer-feedback__btn {
     position: absolute;
@@ -182,14 +188,16 @@
     cursor: pointer;
   
     transition: filter 250ms $timing-function;
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: $color-logo-blue;
+      border: 0 solid transparent;
+    
+      background: #188ce8;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
   }
   
-  .footer-feedback__btn:active,
-  .footer-feedback__btn:hover,
-  .footer-feedback__btn:focus {
-    background-color: $color-logo-blue;
-    border: 0 solid transparent;
   
-    background: #188ce8;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }

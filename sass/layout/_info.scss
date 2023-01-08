@@ -4,8 +4,8 @@
   }
   
   .main-info__list {
-  
-    $items: 4;
+  @include grid($gap-grid: 4);
+    // $items: 4;
   }
   
   .main-info__item>.title {

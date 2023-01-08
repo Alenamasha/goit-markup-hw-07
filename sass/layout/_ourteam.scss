@@ -68,28 +68,37 @@
     transition: background-color 250ms $timing-function, 
     color 250ms $timing-function, 
     fill 250ms $timing-function;
+
+
+    &:hover .main-team__icon,
+    &:focus .main-team__icon {
+      background-color: $color-logo-blue;
+      fill: $color-white;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      fill: $color-white;
+      background-color: $color-logo-blue;
+    }
+    
   }
   
-  .main-team__icon:hover,
-  .main-team__link:hover,
-  .main-team__icon:focus,
-  .main-team__link:focus {
+  
+  
+  
+.main-team__icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+  transition: background-color 250ms $timing-function, 
+  fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
     cursor: pointer;
     fill: $color-white;
     background-color: $color-logo-blue;
   }
-  
-  .main-team__link:hover .main-team__icon,
-  .main-team__link:focus .main-team__icon {
-    /* cursor: pointer;*/
-    background-color: $color-logo-blue;
-    fill: $color-white;
-  }
-  
-  .main-team__icon {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-    transition: background-color 250ms $timing-function, 
-    fill 250ms $timing-function;
-  }
+}

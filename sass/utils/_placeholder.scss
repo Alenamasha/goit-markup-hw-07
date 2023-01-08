@@ -8,3 +8,9 @@
 //    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
 // }
     
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    justify-content: center;
+}
